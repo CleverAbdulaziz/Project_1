@@ -1,5 +1,17 @@
 package org.example.entities;
 
 public abstract class BaseEntity {
-    // common fields
+    private int id;
+
+    public BaseEntity(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }
